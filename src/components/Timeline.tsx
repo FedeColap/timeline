@@ -2,18 +2,26 @@ import * as React from 'react';
 export interface ITimelineProps {
   children?: React.ReactNode
 }
-const styles = {
-  color: "orange"
+
+const tlStyle = {
+    margin: '50px 60px',
+    height: '4px',
+    backgroundColor: 'grey'
 };
+const tlProgressStyle = {
+    width: '33%',
+	height: '100%',
+	backgroundColor: 'orange',
+}
 
 const Timeline: React.SFC<ITimelineProps> = (props) => (
-    <div  style={styles} >
-      {props.children}
-     
+    <div className="timeline"  style={tlStyle} >
+      {/* {props.children} */}
+      <div className="timeline-progress" style={tlProgressStyle} ></div> 
     </div>
 );
 
 Timeline.defaultProps = {
-  children: null
+//   children: null
 };
 export default Timeline;
