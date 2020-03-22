@@ -1,18 +1,32 @@
+* {
+	font-family:'Montserrat', sans-serif;
+}
+.status-report {
+	margin-top: 100px;
+}
+.status-report-content {
+	font-size: 24px;
+	text-align: center;
+}
+.status-report-current{
+	font-size: 30px;
+	text-align: center;
+}
+
 .timeline {
     margin: 50px 60px;
-    height: 4px;
+    height: 20px;
     background-color: #ccc;
 }
 .timeline-progress {
-	width: 0;
 	height: 100%;
-	background-color: orange;
+	background-color: #ffcc80;
 }
 
 .timeline-items {
 	margin-left: -10px;
 	margin-right: -10px;
-	margin-top: -12px;
+	margin-top: -20px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -25,7 +39,7 @@
 	content: '';
 	width: 20px;
 	height: 20px;
-	background-color: #ccc;
+	background-color: gray;
 	display: block;
 	border-radius: 100%;
 }
